@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --text-color: #a1a1b1be;
+    --text-color-hover: #eee7e7;
+    --title-color: #E1E1E6;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+nav a:hover{
+    color: var(--text-color-hover);
+}
+
+#nav{
+    padding-top: 4rem;
+    padding-left: 7.2rem;
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+}
+
+.logo{
+    margin-right: 3.2rem;
+}
+
+h1{
+    font-size: 4.8rem;
+    line-height: 6rem;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+.conteinerHome, .error{
+    text-align: center;
+    margin-top:clamp(16rem, 22rem, 27rem);
+}
+
+.btnHome{
+    margin-top: 3.6rem;
+    padding: 12px 32px 12px 32px;
+    background: transparent;
+    color: #FFF;
+    border: solid 2px;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.conteinerExploration, .conteinerTheUniverse{
+    margin-top: 12.5rem;
+    margin-left: 12rem;
+}
+
+.conteinerExploration p, .conteinerTheUniverse p{
+    color: var(--title-color);
+    max-width: 65rem;
+    margin-top: 1.6rem;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+}
+
+.imgHome{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: url("/svg/imgHome.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.imgExploration{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: url("/svg/imgExploration.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.imgTheUniverse{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: url("/svg/imgTheUniverse.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.colorClick{
+    color: #FFF;
+}
+
+.hide{
+    display: none;
+}
